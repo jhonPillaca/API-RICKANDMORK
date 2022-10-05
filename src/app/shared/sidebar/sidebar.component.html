@@ -1,0 +1,24 @@
+<div
+  class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100 position-sticky sticky-top close"
+  [ngClass]="{'show':openClose}">
+  <a routerLink="/dashboard" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+    <span class="fs-5 d-none d-sm-inline">API ANGULAR</span>
+  </a>
+  <ul class="nav  flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start">
+    <li class="nav-item">
+      <a routerLink="/dashboard" routerLinkActive="active" class="nav-link">
+        Dashboard
+      </a>
+    </li>
+    <li>
+
+      <span class="ms-1 d-none d-sm-inline">SERIES</span>
+      <ul class="collapse show nav flex-column ms-1">
+        <li class="w-100">
+          <a routerLink="/rickandmork" routerLinkActive="active" class="nav-link"> Rick and Mork</a>
+        </li>
+      </ul>
+    </li>
+
+  </ul>
+</div>

@@ -1,0 +1,32 @@
+
+<div class="container">
+
+    <div class="card contenedor">
+      <form [formGroup]="form" class="d-flex">
+        <input class="form-control me-2" type="text"  formControlName="search" (keyup)="buscador()" placeholder="Search" aria-label="Search">
+      </form>
+    </div>
+  <div class="row row-cols-1 row-cols-md-2 g-4 detalle">
+
+      <div class="card mb-3 me-3" style="max-width: 500px;" *ngFor="let rick of rickandmork">
+        <div class="row g-0">
+          <div class="col-md-4" style="margin:auto">
+            <img [src]="rick.image" class="img-fluid rounded-start" [alt]="rick.name">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{rick.name}}</h5>
+              <p class="card-text">created : {{rick.created}}</p>
+              <p class="card-text"><small class="text-muted">Specie :{{rick.species}} </small></p>
+              <p class="card-text"><small class="text-muted">Status :{{rick.status}} </small></p>
+              <p class="card-text"><small class="text-muted">Gender :{{rick.gender}} </small></p>
+              <p class="card-text"><small class="text-muted">Origin :{{rick.origin.name}} </small></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+</div>
+

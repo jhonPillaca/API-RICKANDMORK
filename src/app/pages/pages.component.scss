@@ -1,0 +1,33 @@
+.sidebar {
+    background: #fff;
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%) !important;
+}
+.contenido {
+    background: #eee !important;
+    top: 56px;
+    position: relative;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    background: #fff;
+    z-index: 1;
+    width: calc(100% - 251px);
+    right: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+app-header{
+    position: fixed;
+    width: 100%;
+    height: 61px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 14px 28px rgb(0 0 0 / 2%), 0 10px 10px rgb(0 0 0 / 2%) !important;
+}

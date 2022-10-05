@@ -1,0 +1,44 @@
+.container{
+  padding-top:0;
+  margin-top:0;
+}
+.contenedor{
+  position: fixed;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2500;
+  width: calc(100% - 17%) !important;
+  left: 16.5%;
+  height: 100px;
+  &.card{
+    border:none;
+    margin-bottom: 2rem;
+  }
+}
+
+.detalle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 80px;
+}
+
+@media (min-width: 768px) {
+  .row-cols-md-2>* {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  .contenedor{
+    width: calc(100% - 17%) !important;
+    left:12%;
+  }
+}
+
+@media (min-width:1200px){
+  .contenedor{
+    width: calc(100% - 17%) !important;
+  }
+}
